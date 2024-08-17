@@ -1,3 +1,10 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
 # Job Market Paper
 * “Alcohol, Pregnancy, and Health Outcomes” ([current version](https://rbhebert.github.io/files/hebert_jmp.pdf))
 
