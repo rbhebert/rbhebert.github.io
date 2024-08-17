@@ -31,7 +31,7 @@ Experience
 * 2021-2022: Instructional Design Subject Matter Collaborator
   * Andrew Young School of Policy Studies, Dean’s Office & Department of Public Management & Policy
   * Collaborated with an instructional designer to develop math in economics online training
-  * Created student learning and support materials, assessments, and learning ac- tivities
+  * Created student learning and support materials, assessments, and activities
   
 Interests
 ======
