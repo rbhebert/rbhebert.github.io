@@ -7,8 +7,6 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
-
 You can find my full CV [here](https://rbhebert.github.io/files/hebert_cv.pdf).
 
 Education
