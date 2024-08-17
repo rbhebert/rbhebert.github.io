@@ -9,56 +9,44 @@ redirect_from:
 
 {% include base_path %}
 
+You can find my full CV [here](/files/hebert_cv.pdf).
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* PhD Economics, Georgia State University, 2025 (expected)
+* MA Economics, Georgia State University, 2022
+* BS Mathematics, Texas State University, 2020
+* BA Economics, Texas State University, 2020
+* AA Economics, Austin Community College, 2016
+* BA English, University of Louisiana, 2008
 
-Work experience
+Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2020-Present: Graduate Research Assistant
+  * Georgia State University
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2023: Health Research Products - QA Engineer (Intern)
+  * Apple, Inc.
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2021-2022: Instructional Design Subject Matter Collaborator
+  * Andrew Young School of Policy Studies, Dean’s Office & Department of Public Management & Policy
+  * Collaborated with an instructional designer to develop math in economics online training
+  * Created student learning and support materials, assessments, and learning ac- tivities
   
-Skills
+Interests
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Health
+* Public Policy
+* Causal Inference
+* Machine Learning
 
-Publications
+Conference Presentations
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* American Society of Health Economists 2024, “Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults” (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko)
+* American Society of Health Economists 2024, “The Effect of Paid Sick Leave on Healthcare Expenditures” (with Kevin Callison, Michael F. Pesko, and Samuel Sturm)
   
-Talks
+Software Modules
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
+* [POVGUIDE2](https://ideas.repec.org/c/boc/bocode/s459244.html): Stata module to compute Federal Poverty Guidelines by family size and year, 1973-2024
   
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
