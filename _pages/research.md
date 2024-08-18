@@ -12,3 +12,4 @@ author_profile: true
 * “The Effect of Paid Sick Leave on Healthcare Expenditures” (with Kevin Callison, Michael F. Pesko, and Samuel Sturm)
 * “Cigarette Taxes and the Household Budget” (with Samuel Sturm, Chad Cotti, and Michael F. Pesko)
 * “Recreational Marijuana Laws and Body Weight” (with Jang Hyeok An and Ian Jung)
+
