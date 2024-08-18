@@ -1,4 +1,5 @@
 ---
+layout: archive
 permalink: /
 title: "Reginald B. Hebert"
 author_profile: true
