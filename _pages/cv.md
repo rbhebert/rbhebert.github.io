@@ -25,6 +25,8 @@ Interests
 
 Conference Presentations
 ======
+* Allied Social Science Associations Annual Meeting 2025, “Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults” (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko)
+* Southern Economic Association 94th Annual Meeting 2024, “Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults” (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko)
 * American Society of Health Economists 2024, “Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults” (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko)
 * American Society of Health Economists 2024, “The Effect of Paid Sick Leave on Healthcare Expenditures” (with Kevin Callison, Michael F. Pesko, and Samuel Sturm)
   
