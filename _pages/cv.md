@@ -27,12 +27,14 @@ Conference Presentations
 ======
 <details>
   <summary>Allied Social Science Associations Annual Meeting 2025</summary>
-  “Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults” (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko)
+  
+  * “Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults” (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko)
 </details>
 
 <details>
   <summary>Southern Economic Association 94th Annual Meeting 2024</summary>
-  “Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults” (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko)
+  
+  * “Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults” (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko)
 </details>
 
 <details>
