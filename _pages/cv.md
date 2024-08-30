@@ -25,13 +25,21 @@ Interests
 
 Conference Presentations
 ======
-* <details>
+<details>
   <summary>Allied Social Science Associations Annual Meeting 2025</summary>
   “Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults” (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko)
 </details>
-* Southern Economic Association 94th Annual Meeting 2024, “Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults” (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko)
-* American Society of Health Economists 2024, “Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults” (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko)
-* American Society of Health Economists 2024, “The Effect of Paid Sick Leave on Healthcare Expenditures” (with Kevin Callison, Michael F. Pesko, and Samuel Sturm)
+
+<details>
+  <summary>Southern Economic Association 94th Annual Meeting 2024</summary>
+  “Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults” (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko)
+</details>
+
+<details>
+  <summary>American Society of Health Economists 2024</summary>
+  * “Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults” (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko)
+  * “The Effect of Paid Sick Leave on Healthcare Expenditures” (with Kevin Callison, Michael F. Pesko, and Samuel Sturm)
+</details>
   
 Software Modules
 ======
@@ -46,8 +54,9 @@ Experience
   * Apple, Inc.
 
 * 2021-2022: Instructional Design Subject Matter Collaborator
-  * Andrew Young School of Policy Studies, Dean’s Office & Department of Public Management & Policy
+  <details>
+    <summary>Andrew Young School of Policy Studies, Dean’s Office & Department of Public Management & Policy</summary>
   * Collaborated with an instructional designer to develop math in economics online training
   * Created student learning and support materials, assessments, and activities
-  
+  </details>
 
