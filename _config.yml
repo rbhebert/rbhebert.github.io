@@ -12,7 +12,7 @@ title                    : "Reginald B. Hebert"
 title_separator          : "-"
 name                     : &name "Reginald B. Hebert"
 description              : &description "personal description"
-url                      : "https://rbhebert.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://rbhebert.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "rbhebert/rbhebert.github.io"
 
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Reginald B. Hebert"
   pronouns         : # example: "she/her"  
-  bio              : "Economics PhD candidate"
+  bio              : "Economics PhD Candidate"
   location         : "Atlanta, GA"
   employer         : "Georgia State University"
   uri              : # URL
