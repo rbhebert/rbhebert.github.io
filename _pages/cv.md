@@ -26,14 +26,14 @@ Interests
 Conference Presentations
 ======
 <details>
-  <summary>Allied Social Science Associations Annual Meeting 2025 (upcoming)</summary>
+  <summary>Allied Social Science Associations Annual Meeting 2025</summary>
   
   “Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults” (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko)
 
 </details>
 
 <details>
-  <summary>Southern Economic Association 94th Annual Meeting 2024 (upcoming)</summary>
+  <summary>Southern Economic Association 94th Annual Meeting 2024</summary>
   
   “Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults” (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko)
 
@@ -52,7 +52,10 @@ Software Modules
 
 Experience
 ======
-* 2020-Present: Graduate Research Assistant
+* 2025-Present: Postdoctoral Associate
+  * Yale University
+
+* 2020-2024: Graduate Research Assistant
   * Georgia State University
 
 * 2023: Health Research Products - QA Engineer (Intern)
