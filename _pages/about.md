@@ -7,4 +7,4 @@ redirect_from:
   - /about.html
 ---
 
-I am a health economist and postdoctoral associate at the Yale School of Public Health. My primary research interests are in the areas of health, public policy, and access to care.  
+I am a health economist and postdoctoral associate at the [Yale School of Public Health](https://ysph.yale.edu/profile/reginald-hebert/). My primary research interests are in the areas of health, public policy, and access to care.  
