@@ -17,35 +17,6 @@ Education
 * AA Economics, Austin Community College, 2016
 * BA English, University of Louisiana, 2008
   
-Interests
-======
-* Health
-* Public Policy
-* Access to Care
-
-Conference Presentations
-======
-<details>
-  <summary>Allied Social Science Associations Annual Meeting 2025</summary>
-  
-  “Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults” (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko)
-
-</details>
-
-<details>
-  <summary>Southern Economic Association 94th Annual Meeting 2024</summary>
-  
-  “Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults” (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko)
-
-</details>
-
-<details>
-  <summary>American Society of Health Economists 2024</summary>
-  
-  (1) “Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults” (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko) and (2) “The Effect of Paid Sick Leave on Healthcare Expenditures” (with Kevin Callison, Michael F. Pesko, and Samuel Sturm)
-
-</details>
-  
 Software Modules
 ======
 * [POVGUIDE2](https://ideas.repec.org/c/boc/bocode/s459244.html): Stata module to compute Federal Poverty Guidelines by family size and year, 1973-2024
