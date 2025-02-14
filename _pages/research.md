@@ -19,7 +19,7 @@ redirect_from:
 [current version](https://rbhebert.github.io/files/hebert_jmp.pdf)
 
 # Works in Progress
-* Longitudinal Trends in Medicaid Hearing Aid Coverage for Adults in the United States: 2003-2023 (with Michelle Arnold, Lauren Tonti , Serena Phillips, Stacie P. Kershner, Brandy Lipton, Brianna Heslin, Benjamin Ukert, and Michael F. Pesko)
+* Longitudinal Trends in Medicaid Hearing Aid Coverage for Adults in the United States: 2003-2023 (with Michelle Arnold, Lauren Tonti, Serena Phillips, Stacie P. Kershner, Brandy Lipton, Brianna Heslin, Benjamin Ukert, and Michael F. Pesko)
 * Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults (with Benjamin Ukert, Michelle Arnold, Brandy Lipton, and Michael F. Pesko)
 * The Effect of Paid Sick Leave on Healthcare Expenditures (with Kevin Callison, Michael F. Pesko, and Samuel Sturm)
 * Cigarette Taxes and the Household Budget (with Samuel Sturm, Michael Darden, and Michael F. Pesko)
