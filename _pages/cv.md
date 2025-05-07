@@ -10,7 +10,7 @@ You can find my full CV [here](https://rbhebert.github.io/files/hebert_cv.pdf).
 
 Education
 ======
-* PhD Economics, Georgia State University, 2025 (expected)
+* PhD Economics, Georgia State University, 2025
 * MA Economics, Georgia State University, 2022
 * BS Mathematics, Texas State University, 2020
 * BA Economics, Texas State University, 2020
