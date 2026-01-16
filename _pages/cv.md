@@ -23,20 +23,8 @@ Software Modules
 
 Experience
 ======
-* 2025-Present: Postdoctoral Associate
-  * Yale University
-
-* 2020-2024: Graduate Research Assistant
-  * Georgia State University
-
-* 2023: Health Research Products - QA Engineer (Intern)
-  * Apple, Inc.
-
-* 2021-2022: Instructional Design Subject Matter Collaborator
-  <details>
-    <summary>Andrew Young School of Policy Studies, Dean’s Office & Department of Public Management & Policy</summary>
-    Collaborated with an instructional designer to develop math in economics online training, and
-  created student learning and support materials, assessments, and activities
-
-  </details>
+* Associate Research Scientist, Yale School of Public Health, 2026-Present
+* Postdoctoral Associate, Yale School of Public Health, 2025-2026
+* Health Research Products - QA Engineer (Intern), Apple, 2023
+* Graduate Research Assistant, Georgia State University, 2020-2024
 
