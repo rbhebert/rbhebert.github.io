@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<title>Reginald B. Hebert | Academic Profile</title>
+<meta name="description" content="Academic profile, research, publications, and contact information for Reginald B. Hebert.">
+<style>
+  :root {
+    --primary: #3a3a3a;       /* dark grey - header/headings */
+    --primary-light: #595959; /* medium grey - gradients */
+    --accent: #8a8a8a;        /* mid grey - accents/underlines */
+    --bg-light: #f2f2f0;      /* light grey - page background */
+    --bg-card: #fafafa;       /* near-white grey - cards */
+    --border: #d9d9d9;        /* light grey border */
+    --text-dark: #262626;
+    --text-muted: #666;
+    --orcid-green: #A6CE39;   /* official ORCID brand color */
+    --github-black: #181717;  /* official GitHub brand color */
+    --linkedin-blue: #0A66C2; /* official LinkedIn brand color */
+    --max-width: 960px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: var(--text-dark);
+    line-height: 1.65;
+    background: var(--bg-light);
+  }
+
+  img { max-width: 100%; display: block; }
+
+  .container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.25rem;
+  }
+
+  /* ---------- Header / Nav ---------- */
+  header {
+    background: var(--primary);
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  .site-title {
+    font-size: clamp(1.1rem, 4vw, 1.6rem);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .site-title:hover, .site-title:focus {
+    color: #cfcfcf;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    font-size: clamp(0.85rem, 2vw, 1rem);
+  }
+
+  nav a {
+    color: #e6e6e6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  nav a:hover, nav a:focus {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: #fff;
+    text-align: center;
+    padding: clamp(2.5rem, 8vw, 5rem) 1.25rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    margin-bottom: 0.5rem;
+  }
+
+  .hero p {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    color: #dcdcdc;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .hero .affiliation {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #cfcfcf;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+  }
+
+  /* ---------- Sections ---------- */
+  section {
+    padding: clamp(2rem, 6vw, 3.5rem) 0;
+  }
+
+  section:nth-of-type(even) {
+    background: #ffffff;
+  }
+
+  h2 {
+    font-size: clamp(1.4rem, 3.5vw, 2rem);
+    color: var(--primary);
+    border-bottom: 3px solid var(--accent);
+    display: inline-block;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* ---------- About ---------- */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  @media (min-width: 700px) {
+    .about-grid {
+      grid-template-columns: 220px 1fr;
+    }
+  }
+
+  .about-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    border: 4px solid var(--accent);
+    filter: grayscale(15%);
+  }
+
+  #about p {
+  margin-bottom: 1rem;
+  }
+
+  #about p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ---------- Research / Publications / Working Papers ---------- */
+  .pub-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .pub-item {
+    background: var(--bg-light);
+    border-left: 4px solid var(--primary);
+    padding: 1rem 1.25rem;
+    border-radius: 4px;
+  }
+
+  .pub-item.working-paper {
+    border-left: 4px dashed var(--accent);
+    background: var(--bg-card);
+  }
+
+  .pub-item .pub-title {
+    font-weight: bold;
+    color: var(--primary);
+  }
+
+  .pub-item .pub-meta {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+  }
+
+  .status-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #fff;
+    background: var(--accent);
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+
+  /* ---------- Teaching / CV cards ---------- */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  .card h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  /* ---------- Contact ---------- */
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact-info div {
+    min-width: 180px;
+  }
+
+  .contact-info strong {
+    display: block;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+  }
+
+  .contact-info a {
+    color: var(--primary-light);
+    text-decoration: none;
+  }
+
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    color: #fff;
+    transition: background 0.2s ease, transform 0.15s ease;
+  }
+
+  .social-icons a:hover {
+    transform: scale(1.08);
+  }
+
+  .social-icons svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    fill: currentColor;
+  }
+
+  /* ORCID badge: official-style green circle with "iD" text */
+  .social-icons a.orcid-icon {
+    background: var(--orcid-green);
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.85rem;
+    letter-spacing: -0.5px;
+  }
+
+  .social-icons a.orcid-icon:hover {
+    background: #96b933; /* slightly darker green on hover */
+  }
+
+  /* GitHub badge: official black brand color */
+  .social-icons a.github-icon {
+    background: var(--github-black);
+  }
+
+  .social-icons a.github-icon:hover {
+    background: #000000;
+  }
+
+  /* LinkedIn badge: official blue brand color */
+  .social-icons a.linkedin-icon {
+    background: var(--linkedin-blue);
+  }
+
+  .social-icons a.linkedin-icon:hover {
+    background: #004182; /* LinkedIn's darker hover blue */
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    background: var(--primary);
+    color: #ccc;
+    text-align: center;
+    padding: 1.25rem;
+    font-size: 0.85rem;
+  }
+
+  /* ---------- Small-screen nav collapse ---------- */
+  @media (max-width: 480px) {
+    .nav-wrap { flex-direction: column; text-align: center; }
+    nav ul { justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav-wrap">
+    <a href="#" class="site-title">Reginald B. Hebert</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#working-papers">Working Papers</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Reginald B. Hebert, PhD</h1>
+  <p>Economist &amp; Associate Research Scientist</p>
+  <p class="affiliation">Yale School of Public Health, Department of Health Policy &amp; Management</p>
+</section>
+
+<section id="about">
+  <div class="container about-grid">
+    <img class="about-photo" src="profile.png" alt="Portrait of Reginald B. Hebert">
+    <div>
+      <h2>About</h2>
+      <p>
+        I am an Associate Research Scientist in the Department of Health Policy &amp; Management at the Yale School of Public Health. My research focuses on the economics of health and public policy, including risky behaviors such as tobacco and alcohol use as well as hearing health. 
+      </p>
+      <p>
+        I initially earned a BA in English from the University of Louisiana, but later returned to continue my education due to my interest in the economics of health. I earned an AA in Economcs from Austin Community College in 2016, and then two additional undergraduate degrees from Texas State University in 2020: a BA in Economics and a BS in Mathematics. Subsequently, I enrolled in the PhD program at Georgia State University's Andrew Young School and earned an MA in Economics in 2022 and a PhD in Economics in 2025. 
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="container">
+    <h2>Research &amp; Publications</h2>
+    <ul class="pub-list">
+      <li class="pub-item">
+        <div class="pub-title">Longitudinal Trends in Medicaid Hearing Aid Coverage for Adults in the United States: 2003-2023</div>
+        <div class="pub-meta">Arnold M. L., Tonti L., Phillips S., Kershner S. P., Lipton B., Heslin B., Ukert B., <strong>Hebert R. B.</strong>, Pesko M. F. <em>American Journal of Audiology</em>, 2026, 35: 883&ndash;892.</div>
+        <div class="pub-ids">
+          DOI: <a href="https://doi.org/10.1044/2026_aja-25-00204" target="_blank" rel="noopener">10.1044/2026_aja-25-00204</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="working-papers">
+  <div class="container">
+    <h2>Working Papers</h2>
+    <ul class="pub-list">
+      <li class="pub-item">
+        <div class="pub-title">Cigarette Taxes and the Household Budget</div>
+        <div class="pub-meta">Darden, M. E., <strong>Hebert R. B.</strong>, Pesko M. F., Sturm S. <em>NBER Working Paper 33746</em></div>
+        <div class="pub-ids">
+          DOI: <a href="https://doi.org/10.3386/w33746" target="_blank" rel="noopener">10.3386/w33746</a>
+        </div>
+      </li>
+      <li class="pub-item">
+        <div class="pub-title">Exclusive Cigar Use Rises as Cigarette Smoking Declines in the US: Evidence from Sales and Survey Data <span class="status-tag">Under Review</span> </div>
+        <div class="pub-meta"><strong>Hebert R. B.</strong>, Pesko M. F., Friedman, A. S. </div>
+      </li>
+      <li class="pub-item">
+        <div class="pub-title">Differential Effects: When E-cigarette Policies Contribute to Health Inequities </div>
+        <div class="pub-meta"><strong>Hebert R. B.</strong>, Pesko M. F., Friedman, A. S. </div>
+        <div class="pub-ids">
+          TOPS Presentation: <a href="https://www.youtube.com/watch?v=FoXD3Gr0NyA" target="_blank" rel="noopener">11 September 2026</a>
+        </div>
+      </li>
+      <li class="pub-item">
+        <div class="pub-title">Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults <span class="status-tag">R&amp;R</span> </div>
+        <div class="pub-meta">Arnold M. L., Lipton B., Ukert B., <strong>Hebert R. B.</strong>, Pesko M. F. </div>
+      </li>
+      <li class="pub-item">
+        <div class="pub-title">Assessing Responses to a Unique Flavor Policy: Lessons from Maryland <span class="status-tag">Under Review</span> </div>
+        <div class="pub-meta"><strong>Hebert R. B.</strong>, Zhou S., Jimenez-Mendoza E., Hoke K., Friedman A.S. </div>
+      </li>
+      <li class="pub-item">
+        <div class="pub-title">The Effect of Involuntary Job Loss on Subjective Well-Being and Health Behaviors <span class="status-tag">R&amp;R</span> </div>
+        <div class="pub-meta">An, J., Park S., <strong>Hebert R. B.</strong> </div>
+        <div class="pub-ids">
+          SSRN: <a href="https://dx.doi.org/10.2139/ssrn.6269710" target="_blank" rel="noopener">10.2139/ssrn.6269710</a>
+        </div>
+      </li>
+      <li class="pub-item">
+        <div class="pub-title">The Impact of Recreational Marijuana Laws on Obesity </div>
+        <div class="pub-meta">An J., <strong>Hebert R. B.</strong>, Jung E. </div>
+      </li>
+      <li class="pub-item">
+        <div class="pub-title">Alcohol, Pregnancy, and Health Outcomes <span class="status-tag">R&amp;R</span> </div>
+        <div class="pub-meta"><strong>Hebert R. B.</strong> </div>
+        <div class="pub-ids">
+          Version: <a href="hebert_alcohol.pdf" target="_blank" rel="noopener">November 2024</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="teaching">
+  <div class="container">
+    <h2>Teaching</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Principles of Microeconomics (ECON 2106)</h3>
+        <p>Teaching Assistant, Georgia State University, Fall/Spring 2020, 2021.</p>
+      </div>
+      <div class="card">
+        <h3>Health Economics (ECON 4210)</h3>
+        <p>Teaching Assistant, Georgia State University, Fall 2023.</p>
+      </div>
+      <div class="card">
+        <h3>Interactive Tools for Principles of Microeconomics</h3>
+        <p>Assessment tools for Principles of Microeconomics. Contributed to creation and testing of materials, Spring 2022.</p> <p>Eremionkhale, A., Eveland, M., Frost, S., Swarthout, T., <strong>Hebert R. B.</strong>, Jung, E,, Jeon, G. <em>Business Administration, Management, and Economics Ancillary Materials</em>. <a href="https://oer.galileo.usg.edu/business-ancillary/8/" target="_blank" rel="noopener">ALG Commons</a> </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cv">
+  <div class="container">
+    <h2>Curriculum Vitae</h2>
+    <p>Download my full CV here.</p>
+    <p style="margin-top:1rem;">
+      <a href="hebert_cv.pdf" style="display:inline-block;background:var(--primary);color:#fff;padding:0.6rem 1.2rem;border-radius:4px;text-decoration:none;">
+        Download CV (PDF)
+      </a>
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <div>
+        <strong>Email</strong>
+        <a href="mailto:reginald.hebert@university.edu">reginald.hebert@yale.edu</a>
+      </div>
+      <div>
+        <strong>Profile</strong>
+        <a href="https://ysph.yale.edu/profile/reginald-hebert/">YSPH</a>
+      </div>
+      <div>
+        <strong>Office</strong>
+        60 College Street<br>New Haven, CT 06520
+      </div>
+      <div>
+        <strong>Connect</strong>
+        <div class="social-icons">
+          <a class="orcid-icon" href="https://orcid.org/0009-0000-8817-6796" target="_blank" rel="noopener" aria-label="ORCID profile">iD</a>
+          <a class="github-icon" href="https://github.com/reginaldhebert" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+          </a>
+          <a class="linkedin-icon" href="https://www.linkedin.com/in/reginaldhebert/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.4h-3.6v-5.6c0-1.3-.5-2.2-1.7-2.2-.9 0-1.5.6-1.7 1.2-.1.2-.1.5-.1.8v5.8H9.6s.1-9.4 0-10.4h3.6v1.5c.5-.7 1.3-1.7 3.2-1.7 2.3 0 4 1.5 4 4.7v5.9zM5.6 8.5c-1.2 0-2-.8-2-1.8s.8-1.8 2.1-1.8 2 .8 2 1.8c0 1-.8 1.8-2.1 1.8zm1.8 11.9H3.8V10h3.6v10.4z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; <span id="year"></span> Reginald B. Hebert. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
