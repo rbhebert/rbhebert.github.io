@@ -138,6 +138,19 @@
     margin-bottom: 1.5rem;
   }
 
+  .subsection-heading {
+    font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+    color: var(--primary-light);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .subsection-heading:first-of-type {
+    margin-top: 0;
+  }
+
   /* ---------- About ---------- */
   .about-grid {
     display: grid;
@@ -348,7 +361,7 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#research">Research</a></li>
-        <li><a href="#working-papers">Working Papers</a></li>
+        <li><a href="#working-papers">Work in Progress</a></li>
         <li><a href="#teaching">Teaching</a></li>
         <li><a href="#cv">CV</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -372,7 +385,7 @@
         I am an Associate Research Scientist in the Department of Health Policy &amp; Management at the Yale School of Public Health. My research focuses on the economics of health and public policy, including risky behaviors such as tobacco and alcohol use as well as hearing health. 
       </p>
       <p>
-        I initially earned a BA in English from the University of Louisiana, but later returned to continue my education due to my interest in the economics of health. I earned an AA in Economics from Austin Community College in 2016, and then two additional undergraduate degrees from Texas State University in 2020: a BA in Economics and a BS in Mathematics. Subsequently, I enrolled in the PhD program at Georgia State University's Andrew Young School and earned an MA in Economics in 2022 and a PhD in Economics in 2025. 
+        I initially earned a BA in English from the University of Louisiana, but later returned to continue my education due to my interest in the economics of health. I earned an AA in Economcs from Austin Community College in 2016, and then two additional undergraduate degrees from Texas State University in 2020: a BA in Economics and a BS in Mathematics. Subsequently, I enrolled in the PhD program at Georgia State University's Andrew Young School and earned an MA in Economics in 2022 and a PhD in Economics in 2025. 
       </p>
     </div>
   </div>
@@ -395,7 +408,9 @@
 
 <section id="working-papers">
   <div class="container">
-    <h2>Working Papers</h2>
+    <h2>Work in Progress</h2>
+
+    <h3 class="subsection-heading">Working Papers</h3>
     <ul class="pub-list">
       <li class="pub-item">
         <div class="pub-title">Cigarette Taxes and the Household Budget</div>
@@ -404,6 +419,24 @@
           DOI: <a href="https://doi.org/10.3386/w33746" target="_blank" rel="noopener">10.3386/w33746</a>
         </div>
       </li>
+      <li class="pub-item">
+        <div class="pub-title">The Effect of Involuntary Job Loss on Subjective Well-Being and Health Behaviors <span class="status-tag">R&amp;R</span> </div>
+        <div class="pub-meta">An, J., Park S., <strong>Hebert R. B.</strong> </div>
+        <div class="pub-ids">
+          SSRN: <a href="https://dx.doi.org/10.2139/ssrn.6269710" target="_blank" rel="noopener">10.2139/ssrn.6269710</a>
+        </div>
+      </li>
+      <li class="pub-item">
+        <div class="pub-title">Alcohol, Pregnancy, and Health Outcomes  </div>
+        <div class="pub-meta"><strong>Hebert R. B.</strong> </div>
+        <div class="pub-ids">
+          Version: <a href="hebert_alcohol.pdf" target="_blank" rel="noopener">November 2024</a>
+        </div>
+      </li>
+    </ul>
+
+    <h3 class="subsection-heading">Ongoing Projects</h3>
+    <ul class="pub-list">
       <li class="pub-item">
         <div class="pub-title">Exclusive Cigar Use Rises as Cigarette Smoking Declines in the US: Evidence from Sales and Survey Data <span class="status-tag">Under Review</span> </div>
         <div class="pub-meta"><strong>Hebert R. B.</strong>, Pesko M. F., Friedman, A. S. </div>
@@ -424,22 +457,8 @@
         <div class="pub-meta"><strong>Hebert R. B.</strong>, Zhou S., Jimenez-Mendoza E., Hoke K., Friedman A.S. </div>
       </li>
       <li class="pub-item">
-        <div class="pub-title">The Effect of Involuntary Job Loss on Subjective Well-Being and Health Behaviors <span class="status-tag">R&amp;R</span> </div>
-        <div class="pub-meta">An, J., Park S., <strong>Hebert R. B.</strong> </div>
-        <div class="pub-ids">
-          SSRN: <a href="https://dx.doi.org/10.2139/ssrn.6269710" target="_blank" rel="noopener">10.2139/ssrn.6269710</a>
-        </div>
-      </li>
-      <li class="pub-item">
         <div class="pub-title">The Impact of Recreational Marijuana Laws on Obesity </div>
         <div class="pub-meta">An J., <strong>Hebert R. B.</strong>, Jung E. </div>
-      </li>
-      <li class="pub-item">
-        <div class="pub-title">Alcohol, Pregnancy, and Health Outcomes </div>
-        <div class="pub-meta"><strong>Hebert R. B.</strong> </div>
-        <div class="pub-ids">
-          Version: <a href="hebert_alcohol.pdf" target="_blank" rel="noopener">November 2024</a>
-        </div>
       </li>
     </ul>
   </div>
@@ -497,7 +516,7 @@
         <strong>Connect</strong>
         <div class="social-icons">
           <a class="orcid-icon" href="https://orcid.org/0009-0000-8817-6796" target="_blank" rel="noopener" aria-label="ORCID profile">iD</a>
-          <a class="github-icon" href="https://github.com/rbhebert" target="_blank" rel="noopener" aria-label="GitHub profile">
+          <a class="github-icon" href="https://github.com/reginaldhebert" target="_blank" rel="noopener" aria-label="GitHub profile">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
           </a>
           <a class="linkedin-icon" href="https://www.linkedin.com/in/reginaldhebert/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
