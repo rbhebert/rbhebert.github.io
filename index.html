@@ -6,6 +6,15 @@
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <title>Reginald B. Hebert | Academic Profile</title>
 <meta name="description" content="Academic profile, research, publications, and contact information for Reginald B. Hebert.">
+
+<!-- Open Graph / link previews (LinkedIn, Slack, Facebook, iMessage, etc.) -->
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://reginaldhebert.com/">
+<meta property="og:title" content="Reginald B. Hebert, PhD">
+<meta property="og:description" content="Health economist at the Yale School of Public Health">
+<meta property="og:image" content="https://reginaldhebert.com/profile.png">
+<meta property="og:image:alt" content="Portrait of Reginald B. Hebert">
+<meta name="twitter:card" content="summary">
 <style>
   :root {
     --primary: #3a3a3a;       /* dark grey - header/headings */
@@ -19,6 +28,7 @@
     --orcid-green: #A6CE39;   /* official ORCID brand color */
     --github-black: #181717;  /* official GitHub brand color */
     --linkedin-blue: #0A66C2; /* official LinkedIn brand color */
+    --scholar-blue: #4285F4;  /* Google Scholar brand blue */
     --max-width: 960px;
   }
 
@@ -123,6 +133,7 @@
   /* ---------- Sections ---------- */
   section {
     padding: clamp(2rem, 6vw, 3.5rem) 0;
+    scroll-margin-top: 4.75rem; /* keep headings clear of the sticky header */
   }
 
   section:nth-of-type(even) {
@@ -136,19 +147,6 @@
     display: inline-block;
     padding-bottom: 0.3rem;
     margin-bottom: 1.5rem;
-  }
-
-  .subsection-heading {
-    font-size: clamp(1.1rem, 2.5vw, 1.35rem);
-    color: var(--primary-light);
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.2rem;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .subsection-heading:first-of-type {
-    margin-top: 0;
   }
 
   /* ---------- About ---------- */
@@ -181,6 +179,23 @@
 
   #about p:last-child {
     margin-bottom: 0;
+  }
+
+  .about-quote {
+    margin: 0.5rem 0 0;
+    padding-left: 1.25rem;
+    border-left: 3px solid var(--accent);
+  }
+
+  #about .about-quote blockquote p {
+    font-style: italic;
+    color: var(--primary-light);
+    margin-bottom: 0.5rem;
+  }
+
+  .about-quote figcaption {
+    font-size: 0.9rem;
+    color: var(--text-muted);
   }
 
   /* ---------- Research / Publications / Working Papers ---------- */
@@ -220,7 +235,7 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: #fff;
-    background: var(--accent);
+    background: var(--primary-light);
     padding: 0.15rem 0.5rem;
     border-radius: 3px;
     margin-left: 0.5rem;
@@ -246,6 +261,56 @@
     color: var(--primary);
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
+  }
+
+  /* Teaching: two course cards side by side, materials card full width below */
+  @media (min-width: 600px) {
+    #teaching .card-grid { grid-template-columns: 1fr 1fr; }
+    #teaching .card-wide { grid-column: 1 / -1; }
+  }
+
+  .course-code {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-light);
+    margin-bottom: 0.35rem;
+  }
+
+  .course-citation {
+    margin-top: 0.5rem;
+  }
+
+  /* ---------- CV button ---------- */
+  .cv-download {
+    margin-top: 1rem;
+  }
+
+  .btn {
+    display: inline-block;
+    background: var(--primary);
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+
+  .btn:hover,
+  .btn:focus {
+    background: var(--primary-light);
+  }
+
+  .course-role {
+    font-style: italic;
+  }
+
+  .course-meta {
+    font-size: 0.9rem;
+    color: var(--text-muted);
   }
 
   /* ---------- Contact ---------- */
@@ -278,61 +343,87 @@
 
   .social-icons {
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.1rem;
     justify-content: center;
     align-items: center;
   }
 
+  /* Each link = brand-colored circle + visible text label */
   .social-icons a {
     display: inline-flex;
     align-items: center;
+    gap: 0.4rem;
+    color: var(--primary-light);
+    text-decoration: none;
+  }
+
+  .social-icons a:hover { text-decoration: none; } /* underline only the label */
+
+  .social-icons a:hover .label,
+  .social-icons a:focus .label {
+    text-decoration: underline;
+  }
+
+  .social-icons .badge {
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 1.8rem;
+    height: 1.8rem;
     border-radius: 50%;
     color: #fff;
+    flex-shrink: 0;
     transition: background 0.2s ease, transform 0.15s ease;
   }
 
-  .social-icons a:hover {
+  .social-icons a:hover .badge {
     transform: scale(1.08);
   }
 
   .social-icons svg {
-    width: 1.1rem;
-    height: 1.1rem;
+    width: 1rem;
+    height: 1rem;
     fill: currentColor;
   }
 
   /* ORCID badge: official-style green circle with "iD" text */
-  .social-icons a.orcid-icon {
+  .social-icons a.orcid-icon .badge {
     background: var(--orcid-green);
-    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     letter-spacing: -0.5px;
   }
 
-  .social-icons a.orcid-icon:hover {
+  .social-icons a.orcid-icon:hover .badge {
     background: #96b933; /* slightly darker green on hover */
   }
 
   /* GitHub badge: official black brand color */
-  .social-icons a.github-icon {
+  .social-icons a.github-icon .badge {
     background: var(--github-black);
   }
 
-  .social-icons a.github-icon:hover {
+  .social-icons a.github-icon:hover .badge {
     background: #000000;
   }
 
   /* LinkedIn badge: official blue brand color */
-  .social-icons a.linkedin-icon {
+  .social-icons a.linkedin-icon .badge {
     background: var(--linkedin-blue);
   }
 
-  .social-icons a.linkedin-icon:hover {
+  /* Google Scholar badge */
+  .social-icons a.scholar-icon .badge {
+    background: var(--scholar-blue);
+  }
+
+  .social-icons a.scholar-icon:hover .badge {
+    background: #3367d6;
+  }
+
+  .social-icons a.linkedin-icon:hover .badge {
     background: #004182; /* LinkedIn's darker hover blue */
   }
 
@@ -345,23 +436,29 @@
     font-size: 0.85rem;
   }
 
+  footer .last-updated {
+    display: block;
+    margin-top: 0.25rem;
+    color: #b3b3b3;
+  }
+
   /* ---------- Small-screen nav collapse ---------- */
   @media (max-width: 480px) {
     .nav-wrap { flex-direction: column; text-align: center; }
     nav ul { justify-content: center; }
+    section { scroll-margin-top: 6.25rem; } /* header is taller when stacked */
   }
 </style>
 </head>
-<body>
+<body id="top">
 
 <header>
   <div class="container nav-wrap">
-    <a href="#" class="site-title">Reginald B. Hebert</a>
+    <a href="#top" class="site-title">Reginald B. Hebert</a>
     <nav aria-label="Main navigation">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#research">Research</a></li>
-        <li><a href="#working-papers">Work in Progress</a></li>
         <li><a href="#teaching">Teaching</a></li>
         <li><a href="#cv">CV</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -385,15 +482,24 @@
         I am an Associate Research Scientist in the Department of Health Policy &amp; Management at the Yale School of Public Health. My research focuses on the economics of health and public policy, including risky behaviors such as tobacco and alcohol use as well as hearing health. 
       </p>
       <p>
-        I initially earned a BA in English from the University of Louisiana, but later returned to continue my education due to my interest in the economics of health. I earned an AA in Economcs from Austin Community College in 2016, and then two additional undergraduate degrees from Texas State University in 2020: a BA in Economics and a BS in Mathematics. Subsequently, I enrolled in the PhD program at Georgia State University's Andrew Young School and earned an MA in Economics in 2022 and a PhD in Economics in 2025. 
+        I initially earned a BA in English from the University of Louisiana, but later returned to continue my education due to my interest in the economics of health. I started back at Austin Community College, then made my way to Texas State for a second BA in Economics and a BS in Mathematics. I landed in Atlanta at Georgia State's Andrew Young School in 2020, and earned my PhD in Economics in 2025. That same year, I came to Yale as a mid-forties postdoc. Now, I'm an Associate Research Scientist.
       </p>
+      <figure class="about-quote">
+        <blockquote>
+          <p>If to be perfect in a certain sphere,<br>
+          What matter, soon or late, or here or there?<br>
+          The blest to-day is as completely so,<br>
+          As who began a thousand years ago.</p>
+        </blockquote>
+        <figcaption>&mdash; Alexander Pope, <cite>An Essay on Man</cite></figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
 <section id="research">
   <div class="container">
-    <h2>Research &amp; Publications</h2>
+    <h2>Publications</h2>
     <ul class="pub-list">
       <li class="pub-item">
         <div class="pub-title">Longitudinal Trends in Medicaid Hearing Aid Coverage for Adults in the United States: 2003-2023</div>
@@ -408,9 +514,7 @@
 
 <section id="working-papers">
   <div class="container">
-    <h2>Work in Progress</h2>
-
-    <h3 class="subsection-heading">Working Papers</h3>
+    <h2>Working Papers</h2>
     <ul class="pub-list">
       <li class="pub-item">
         <div class="pub-title">Cigarette Taxes and the Household Budget</div>
@@ -420,22 +524,26 @@
         </div>
       </li>
       <li class="pub-item">
-        <div class="pub-title">The Effect of Involuntary Job Loss on Subjective Well-Being and Health Behaviors <span class="status-tag">R&amp;R</span> </div>
+        <div class="pub-title">The Effect of Involuntary Job Loss on Subjective Well-Being and Health Behaviors <span class="status-tag">Revise &amp; Resubmit</span> </div>
         <div class="pub-meta">An, J., Park S., <strong>Hebert R. B.</strong> </div>
         <div class="pub-ids">
           SSRN: <a href="https://dx.doi.org/10.2139/ssrn.6269710" target="_blank" rel="noopener">10.2139/ssrn.6269710</a>
         </div>
       </li>
       <li class="pub-item">
-        <div class="pub-title">Alcohol, Pregnancy, and Health Outcomes  </div>
+        <div class="pub-title">Alcohol, Pregnancy, and Health Outcomes <span class="status-tag">Draft: Nov. 2024</span></div>
         <div class="pub-meta"><strong>Hebert R. B.</strong> </div>
         <div class="pub-ids">
-          Version: <a href="hebert_alcohol.pdf" target="_blank" rel="noopener">November 2024</a>
+          PDF: <a href="hebert_alcohol.pdf" target="_blank" rel="noopener">Download draft</a>
         </div>
       </li>
     </ul>
+  </div>
+</section>
 
-    <h3 class="subsection-heading">Ongoing Projects</h3>
+<section id="work-in-progress">
+  <div class="container">
+    <h2>Work in Progress</h2>
     <ul class="pub-list">
       <li class="pub-item">
         <div class="pub-title">Exclusive Cigar Use Rises as Cigarette Smoking Declines in the US: Evidence from Sales and Survey Data <span class="status-tag">Under Review</span> </div>
@@ -449,7 +557,7 @@
         </div>
       </li>
       <li class="pub-item">
-        <div class="pub-title">Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults <span class="status-tag">R&amp;R</span> </div>
+        <div class="pub-title">Medicaid Hearing Aid Mandates and Hearing Aid Purchasing Among Older Adults <span class="status-tag">Revise &amp; Resubmit</span> </div>
         <div class="pub-meta">Arnold M. L., Lipton B., Ukert B., <strong>Hebert R. B.</strong>, Pesko M. F. </div>
       </li>
       <li class="pub-item">
@@ -469,16 +577,21 @@
     <h2>Teaching</h2>
     <div class="card-grid">
       <div class="card">
-        <h3>Principles of Microeconomics (ECON 2106)</h3>
-        <p>Teaching Assistant, Georgia State University, Fall/Spring 2020, 2021.</p>
+        <span class="course-code">ECON 2106</span>
+        <h3>Principles of Microeconomics</h3>
+        <p class="course-role">Teaching Assistant</p>
+        <p class="course-meta">Georgia State University<br>Fall &amp; Spring, 2020&ndash;2021</p>
       </div>
       <div class="card">
-        <h3>Health Economics (ECON 4210)</h3>
-        <p>Teaching Assistant, Georgia State University, Fall 2023.</p>
+        <span class="course-code">ECON 4210</span>
+        <h3>Health Economics</h3>
+        <p class="course-role">Teaching Assistant</p>
+        <p class="course-meta">Georgia State University<br>Fall 2023</p>
       </div>
-      <div class="card">
+      <div class="card card-wide">
+        <span class="course-code">Course Materials</span>
         <h3>Interactive Tools for Principles of Microeconomics</h3>
-        <p>Assessment tools for Principles of Microeconomics. Contributed to creation and testing of materials, Spring 2022.</p> <p>Eremionkhale, A., Eveland, M., Frost, S., Swarthout, T., <strong>Hebert R. B.</strong>, Jung, E,, Jeon, G. <em>Business Administration, Management, and Economics Ancillary Materials</em>. <a href="https://oer.galileo.usg.edu/business-ancillary/8/" target="_blank" rel="noopener">ALG Commons</a> </p>
+        <p>Assessment tools for Principles of Microeconomics. Contributed to creation and testing of materials, Spring 2022.</p> <p class="course-meta course-citation">Eremionkhale, A., Eveland, M., Frost, S., Swarthout, T., <strong>Hebert R. B.</strong>, Jung, E., Jeon, G. <em>Business Administration, Management, and Economics Ancillary Materials</em>. <a href="https://oer.galileo.usg.edu/business-ancillary/8/" target="_blank" rel="noopener">ALG Commons</a> </p>
       </div>
     </div>
   </div>
@@ -488,8 +601,8 @@
   <div class="container">
     <h2>Curriculum Vitae</h2>
     <p>Download my full CV here.</p>
-    <p style="margin-top:1rem;">
-      <a href="hebert_cv.pdf" style="display:inline-block;background:var(--primary);color:#fff;padding:0.6rem 1.2rem;border-radius:4px;text-decoration:none;">
+    <p class="cv-download">
+      <a href="hebert_cv.pdf" class="btn">
         Download CV (PDF)
       </a>
     </p>
@@ -502,7 +615,7 @@
     <div class="contact-info">
       <div>
         <strong>Email</strong>
-        <a href="mailto:reginald.hebert@university.edu">reginald.hebert@yale.edu</a>
+        <a href="mailto:reginald.hebert@yale.edu">reginald.hebert@yale.edu</a>
       </div>
       <div>
         <strong>Profile</strong>
@@ -515,12 +628,17 @@
       <div>
         <strong>Connect</strong>
         <div class="social-icons">
-          <a class="orcid-icon" href="https://orcid.org/0009-0000-8817-6796" target="_blank" rel="noopener" aria-label="ORCID profile">iD</a>
-          <a class="github-icon" href="https://github.com/reginaldhebert" target="_blank" rel="noopener" aria-label="GitHub profile">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+          <a class="orcid-icon" href="https://orcid.org/0009-0000-8817-6796" target="_blank" rel="noopener">
+            <span class="badge" aria-hidden="true">iD</span><span class="label">ORCID</span>
           </a>
-          <a class="linkedin-icon" href="https://www.linkedin.com/in/reginaldhebert/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.4h-3.6v-5.6c0-1.3-.5-2.2-1.7-2.2-.9 0-1.5.6-1.7 1.2-.1.2-.1.5-.1.8v5.8H9.6s.1-9.4 0-10.4h3.6v1.5c.5-.7 1.3-1.7 3.2-1.7 2.3 0 4 1.5 4 4.7v5.9zM5.6 8.5c-1.2 0-2-.8-2-1.8s.8-1.8 2.1-1.8 2 .8 2 1.8c0 1-.8 1.8-2.1 1.8zm1.8 11.9H3.8V10h3.6v10.4z"/></svg>
+          <a class="scholar-icon" href="https://scholar.google.com/citations?user=CEKZ7aAAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+            <span class="badge" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zm-6.8 9.7V16c0 1.9 3 4 6.8 4s6.8-2.1 6.8-4v-3.3L12 16.4l-6.8-3.7z"/></svg></span><span class="label">Google Scholar</span>
+          </a>
+          <a class="github-icon" href="https://github.com/reginaldhebert" target="_blank" rel="noopener">
+            <span class="badge" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg></span><span class="label">GitHub</span>
+          </a>
+          <a class="linkedin-icon" href="https://www.linkedin.com/in/reginaldhebert/" target="_blank" rel="noopener">
+            <span class="badge" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.4h-3.6v-5.6c0-1.3-.5-2.2-1.7-2.2-.9 0-1.5.6-1.7 1.2-.1.2-.1.5-.1.8v5.8H9.6s.1-9.4 0-10.4h3.6v1.5c.5-.7 1.3-1.7 3.2-1.7 2.3 0 4 1.5 4 4.7v5.9zM5.6 8.5c-1.2 0-2-.8-2-1.8s.8-1.8 2.1-1.8 2 .8 2 1.8c0 1-.8 1.8-2.1 1.8zm1.8 11.9H3.8V10h3.6v10.4z"/></svg></span><span class="label">LinkedIn</span>
           </a>
         </div>
       </div>
@@ -530,6 +648,7 @@
 
 <footer>
   &copy; <span id="year"></span> Reginald B. Hebert. All rights reserved.
+  <span class="last-updated">Last updated: November 2026</span>
 </footer>
 
 <script>
